@@ -1,0 +1,416 @@
+[
+    {
+        "label": "date",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "date",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "deque",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
+        "label": "deque",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
+        "label": "deque",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
+        "label": "uuid",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "uuid",
+        "description": "uuid",
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "heapq",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "heapq",
+        "description": "heapq",
+        "detail": "heapq",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "calcular_distancia",
+        "kind": 2,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.otimizador_de_rotas",
+        "description": "fase_nacional_preparacao.exercicios_logica.otimizador_de_rotas",
+        "peekOfCode": "def calcular_distancia(ponto1, ponto2):\n    return ((ponto1[0] - ponto2[0])**2 + (ponto1[1] - ponto2[1])**2)**0.5\ndef calcular_distancia_entre_cada_ponto(pontos):\n    distancias = []\n    for ponto in pontos:\n        copia_de_pontos = pontos.copy()\n        distancia_entre_pontos = []\n        for copia_ponto in copia_de_pontos:\n            if ponto == copia_ponto:\n                continue",
+        "detail": "fase_nacional_preparacao.exercicios_logica.otimizador_de_rotas",
+        "documentation": {}
+    },
+    {
+        "label": "calcular_distancia_entre_cada_ponto",
+        "kind": 2,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.otimizador_de_rotas",
+        "description": "fase_nacional_preparacao.exercicios_logica.otimizador_de_rotas",
+        "peekOfCode": "def calcular_distancia_entre_cada_ponto(pontos):\n    distancias = []\n    for ponto in pontos:\n        copia_de_pontos = pontos.copy()\n        distancia_entre_pontos = []\n        for copia_ponto in copia_de_pontos:\n            if ponto == copia_ponto:\n                continue\n            distancia_entre_dois_pontos = calcular_distancia(ponto, copia_ponto)\n            distancia_entre_pontos.append(",
+        "detail": "fase_nacional_preparacao.exercicios_logica.otimizador_de_rotas",
+        "documentation": {}
+    },
+    {
+        "label": "encontrar_rota_otimizada",
+        "kind": 2,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.otimizador_de_rotas",
+        "description": "fase_nacional_preparacao.exercicios_logica.otimizador_de_rotas",
+        "peekOfCode": "def encontrar_rota_otimizada(pontos):\n    ponto_atual = (0, 0)\n    rota = [ponto_atual]\n    distancia_total = 0\n    pontos_restantes = pontos.copy()\n    print('=== INICIANDO ENTREGAS ===')\n    print(f\"Ponto inicial: {ponto_atual}\")\n    print(f\"Entregas pendentes: {pontos_restantes}\")\n    print(\"-\" * 40)\n    while pontos_restantes:",
+        "detail": "fase_nacional_preparacao.exercicios_logica.otimizador_de_rotas",
+        "documentation": {}
+    },
+    {
+        "label": "entregas",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.otimizador_de_rotas",
+        "description": "fase_nacional_preparacao.exercicios_logica.otimizador_de_rotas",
+        "peekOfCode": "entregas = [(2, 3), (5, 1), (7, 2), (4, 6), (1, 4), (3, 5)]\nrota, distancia = encontrar_rota_otimizada(entregas)\ncalcular_distancia_entre_cada_ponto(entregas)",
+        "detail": "fase_nacional_preparacao.exercicios_logica.otimizador_de_rotas",
+        "documentation": {}
+    },
+    {
+        "label": "Vendas",
+        "kind": 6,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.processador_de_planilhas",
+        "description": "fase_nacional_preparacao.exercicios_logica.processador_de_planilhas",
+        "peekOfCode": "class Vendas:\n    def __init__(self,):        \n        self.total_vendas = deque()\n    def adicionar_venda(self, data: date, produto: str, quantidade: int, valor_unitario: float):\n        self.produto = {\n            \"data_emitido\": data,\n            \"produto\" : produto,\n            \"quantidade\" : quantidade,\n            \"valor_unitario\" : valor_unitario\n        }",
+        "detail": "fase_nacional_preparacao.exercicios_logica.processador_de_planilhas",
+        "documentation": {}
+    },
+    {
+        "label": "vendas",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.processador_de_planilhas",
+        "description": "fase_nacional_preparacao.exercicios_logica.processador_de_planilhas",
+        "peekOfCode": "vendas = Vendas()\nvendas.adicionar_venda(date(2025, 12, 19), \"carro\", 1, 23000)\nvendas.adicionar_venda(date(2025, 12, 19), \"Iphone 12 Pro Max\", 4, 5000)\nvendas.adicionar_venda(date(2025, 9, 12), \"Iphone 12 Pro Max\", 1, 4500)\nvendas.adicionar_venda(date(2025, 9, 12), \"Iphone 16 Pro Max\", 7, 10000)\nvendas.calcular_total_por_dia()\nvendas.calcular_produto_mais_vendido()  \nvendas.analise_geral_vendas()",
+        "detail": "fase_nacional_preparacao.exercicios_logica.processador_de_planilhas",
+        "documentation": {}
+    },
+    {
+        "label": "Biblioteca",
+        "kind": 6,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "peekOfCode": "class Biblioteca:\n    def __init__(self, nome: str):\n        self.library_name = nome\n        self.livros_biblioteca = []\n        self.usuarios_biblioteca = []\n        self.livros_emprestados = deque()\n    def cadastrar_livro(self, livro):\n        if livro in self.livros_biblioteca:\n            print(\"Este livro já esta presente em nossa biblioteca, tente outro livro.\")\n            return",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "documentation": {}
+    },
+    {
+        "label": "Usuario",
+        "kind": 6,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "peekOfCode": "class Usuario:\n    def __init__(self, nome: str, email: str):\n        self.user_id = uuid.uuid1()\n        self.user_name = nome\n        self.email = email\n        self.livros_emprestados = deque()\n        self.quantidade_vezes_emprestou = 0\nclass Livros:\n    def __init__(self, titulo: str, autor: str, ano: date):\n        self.book_id = uuid.uuid1()",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "documentation": {}
+    },
+    {
+        "label": "Livros",
+        "kind": 6,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "peekOfCode": "class Livros:\n    def __init__(self, titulo: str, autor: str, ano: date):\n        self.book_id = uuid.uuid1()\n        self.book_title = titulo\n        self.author = autor\n        self.date_published = ano\n        self.disponivel = True\n        self.quantidade_vezes_emprestado = 0\nbiblioteca = Biblioteca(\"Biblioteca Maringá\")\nus1 = Usuario(\"Djeffer\", \"djeffer@teste.com\")",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "documentation": {}
+    },
+    {
+        "label": "biblioteca",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "peekOfCode": "biblioteca = Biblioteca(\"Biblioteca Maringá\")\nus1 = Usuario(\"Djeffer\", \"djeffer@teste.com\")\nus2 = Usuario(\"Luiz\", \"luiz@teste.com\")\nus3 = Usuario(\"Enrico\", \"enrico@teste.com\")\nlvr1 = Livros(\"Estrela decadente\", \"Demiurgo\", date(2008, 4, 12))\nlvr2 = Livros(\"Arquiteto da Mentira\", \"Demiurgo\", date(2005, 4, 1))\nlvr3 = Livros(\"Artíficie do Cárcere\", \"Demiurgo\", date(2009, 12, 12))\nlvr4 = Livros(\"A Centelha diante da Luz\", \"Demiurgo\", date(2023, 1, 24))\nbiblioteca.cadastrar_livro(lvr1)\nbiblioteca.cadastrar_livro(lvr2)",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "documentation": {}
+    },
+    {
+        "label": "us1",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "peekOfCode": "us1 = Usuario(\"Djeffer\", \"djeffer@teste.com\")\nus2 = Usuario(\"Luiz\", \"luiz@teste.com\")\nus3 = Usuario(\"Enrico\", \"enrico@teste.com\")\nlvr1 = Livros(\"Estrela decadente\", \"Demiurgo\", date(2008, 4, 12))\nlvr2 = Livros(\"Arquiteto da Mentira\", \"Demiurgo\", date(2005, 4, 1))\nlvr3 = Livros(\"Artíficie do Cárcere\", \"Demiurgo\", date(2009, 12, 12))\nlvr4 = Livros(\"A Centelha diante da Luz\", \"Demiurgo\", date(2023, 1, 24))\nbiblioteca.cadastrar_livro(lvr1)\nbiblioteca.cadastrar_livro(lvr2)\nbiblioteca.cadastrar_livro(lvr3)",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "documentation": {}
+    },
+    {
+        "label": "us2",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "peekOfCode": "us2 = Usuario(\"Luiz\", \"luiz@teste.com\")\nus3 = Usuario(\"Enrico\", \"enrico@teste.com\")\nlvr1 = Livros(\"Estrela decadente\", \"Demiurgo\", date(2008, 4, 12))\nlvr2 = Livros(\"Arquiteto da Mentira\", \"Demiurgo\", date(2005, 4, 1))\nlvr3 = Livros(\"Artíficie do Cárcere\", \"Demiurgo\", date(2009, 12, 12))\nlvr4 = Livros(\"A Centelha diante da Luz\", \"Demiurgo\", date(2023, 1, 24))\nbiblioteca.cadastrar_livro(lvr1)\nbiblioteca.cadastrar_livro(lvr2)\nbiblioteca.cadastrar_livro(lvr3)\nbiblioteca.cadastrar_livro(lvr4)",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "documentation": {}
+    },
+    {
+        "label": "us3",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "peekOfCode": "us3 = Usuario(\"Enrico\", \"enrico@teste.com\")\nlvr1 = Livros(\"Estrela decadente\", \"Demiurgo\", date(2008, 4, 12))\nlvr2 = Livros(\"Arquiteto da Mentira\", \"Demiurgo\", date(2005, 4, 1))\nlvr3 = Livros(\"Artíficie do Cárcere\", \"Demiurgo\", date(2009, 12, 12))\nlvr4 = Livros(\"A Centelha diante da Luz\", \"Demiurgo\", date(2023, 1, 24))\nbiblioteca.cadastrar_livro(lvr1)\nbiblioteca.cadastrar_livro(lvr2)\nbiblioteca.cadastrar_livro(lvr3)\nbiblioteca.cadastrar_livro(lvr4)\nbiblioteca.cadastrar_usuarios(us1)",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "documentation": {}
+    },
+    {
+        "label": "lvr1",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "peekOfCode": "lvr1 = Livros(\"Estrela decadente\", \"Demiurgo\", date(2008, 4, 12))\nlvr2 = Livros(\"Arquiteto da Mentira\", \"Demiurgo\", date(2005, 4, 1))\nlvr3 = Livros(\"Artíficie do Cárcere\", \"Demiurgo\", date(2009, 12, 12))\nlvr4 = Livros(\"A Centelha diante da Luz\", \"Demiurgo\", date(2023, 1, 24))\nbiblioteca.cadastrar_livro(lvr1)\nbiblioteca.cadastrar_livro(lvr2)\nbiblioteca.cadastrar_livro(lvr3)\nbiblioteca.cadastrar_livro(lvr4)\nbiblioteca.cadastrar_usuarios(us1)\nbiblioteca.cadastrar_usuarios(us2)",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "documentation": {}
+    },
+    {
+        "label": "lvr2",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "peekOfCode": "lvr2 = Livros(\"Arquiteto da Mentira\", \"Demiurgo\", date(2005, 4, 1))\nlvr3 = Livros(\"Artíficie do Cárcere\", \"Demiurgo\", date(2009, 12, 12))\nlvr4 = Livros(\"A Centelha diante da Luz\", \"Demiurgo\", date(2023, 1, 24))\nbiblioteca.cadastrar_livro(lvr1)\nbiblioteca.cadastrar_livro(lvr2)\nbiblioteca.cadastrar_livro(lvr3)\nbiblioteca.cadastrar_livro(lvr4)\nbiblioteca.cadastrar_usuarios(us1)\nbiblioteca.cadastrar_usuarios(us2)\nbiblioteca.cadastrar_usuarios(us3)",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "documentation": {}
+    },
+    {
+        "label": "lvr3",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "peekOfCode": "lvr3 = Livros(\"Artíficie do Cárcere\", \"Demiurgo\", date(2009, 12, 12))\nlvr4 = Livros(\"A Centelha diante da Luz\", \"Demiurgo\", date(2023, 1, 24))\nbiblioteca.cadastrar_livro(lvr1)\nbiblioteca.cadastrar_livro(lvr2)\nbiblioteca.cadastrar_livro(lvr3)\nbiblioteca.cadastrar_livro(lvr4)\nbiblioteca.cadastrar_usuarios(us1)\nbiblioteca.cadastrar_usuarios(us2)\nbiblioteca.cadastrar_usuarios(us3)\nbiblioteca.emprestar_livro(us1, lvr1)",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "documentation": {}
+    },
+    {
+        "label": "lvr4",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "peekOfCode": "lvr4 = Livros(\"A Centelha diante da Luz\", \"Demiurgo\", date(2023, 1, 24))\nbiblioteca.cadastrar_livro(lvr1)\nbiblioteca.cadastrar_livro(lvr2)\nbiblioteca.cadastrar_livro(lvr3)\nbiblioteca.cadastrar_livro(lvr4)\nbiblioteca.cadastrar_usuarios(us1)\nbiblioteca.cadastrar_usuarios(us2)\nbiblioteca.cadastrar_usuarios(us3)\nbiblioteca.emprestar_livro(us1, lvr1)\nbiblioteca.emprestar_livro(us1, lvr2)",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "documentation": {}
+    },
+    {
+        "label": "us4",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "peekOfCode": "us4 = Usuario(\"Ana\", \"ana@teste.com\")\nus5 = Usuario(\"Pedro\", \"pedro@teste.com\")\nus6 = Usuario(\"Carla\", \"carla@teste.com\")\nlvr5 = Livros(\"O Senhor dos Anéis\", \"J.R.R. Tolkien\", date(1954, 7, 29))\nlvr6 = Livros(\"1984\", \"George Orwell\", date(1949, 6, 8))\nlvr7 = Livros(\"Dom Casmurro\", \"Machado de Assis\", date(1899, 1, 1))\nlvr8 = Livros(\"Harry Potter\", \"J.K. Rowling\", date(1997, 6, 26))\nlvr9 = Livros(\"Clean Code\", \"Robert Martin\", date(2008, 8, 1))\nlvr10 = Livros(\"Python Fluente\", \"Luciano Ramalho\", date(2015, 7, 20))\nbiblioteca.cadastrar_livro(lvr5)",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "documentation": {}
+    },
+    {
+        "label": "us5",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "peekOfCode": "us5 = Usuario(\"Pedro\", \"pedro@teste.com\")\nus6 = Usuario(\"Carla\", \"carla@teste.com\")\nlvr5 = Livros(\"O Senhor dos Anéis\", \"J.R.R. Tolkien\", date(1954, 7, 29))\nlvr6 = Livros(\"1984\", \"George Orwell\", date(1949, 6, 8))\nlvr7 = Livros(\"Dom Casmurro\", \"Machado de Assis\", date(1899, 1, 1))\nlvr8 = Livros(\"Harry Potter\", \"J.K. Rowling\", date(1997, 6, 26))\nlvr9 = Livros(\"Clean Code\", \"Robert Martin\", date(2008, 8, 1))\nlvr10 = Livros(\"Python Fluente\", \"Luciano Ramalho\", date(2015, 7, 20))\nbiblioteca.cadastrar_livro(lvr5)\nbiblioteca.cadastrar_livro(lvr6)",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "documentation": {}
+    },
+    {
+        "label": "us6",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "peekOfCode": "us6 = Usuario(\"Carla\", \"carla@teste.com\")\nlvr5 = Livros(\"O Senhor dos Anéis\", \"J.R.R. Tolkien\", date(1954, 7, 29))\nlvr6 = Livros(\"1984\", \"George Orwell\", date(1949, 6, 8))\nlvr7 = Livros(\"Dom Casmurro\", \"Machado de Assis\", date(1899, 1, 1))\nlvr8 = Livros(\"Harry Potter\", \"J.K. Rowling\", date(1997, 6, 26))\nlvr9 = Livros(\"Clean Code\", \"Robert Martin\", date(2008, 8, 1))\nlvr10 = Livros(\"Python Fluente\", \"Luciano Ramalho\", date(2015, 7, 20))\nbiblioteca.cadastrar_livro(lvr5)\nbiblioteca.cadastrar_livro(lvr6)\nbiblioteca.cadastrar_livro(lvr7)",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "documentation": {}
+    },
+    {
+        "label": "lvr5",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "peekOfCode": "lvr5 = Livros(\"O Senhor dos Anéis\", \"J.R.R. Tolkien\", date(1954, 7, 29))\nlvr6 = Livros(\"1984\", \"George Orwell\", date(1949, 6, 8))\nlvr7 = Livros(\"Dom Casmurro\", \"Machado de Assis\", date(1899, 1, 1))\nlvr8 = Livros(\"Harry Potter\", \"J.K. Rowling\", date(1997, 6, 26))\nlvr9 = Livros(\"Clean Code\", \"Robert Martin\", date(2008, 8, 1))\nlvr10 = Livros(\"Python Fluente\", \"Luciano Ramalho\", date(2015, 7, 20))\nbiblioteca.cadastrar_livro(lvr5)\nbiblioteca.cadastrar_livro(lvr6)\nbiblioteca.cadastrar_livro(lvr7)\nbiblioteca.cadastrar_livro(lvr8)",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "documentation": {}
+    },
+    {
+        "label": "lvr6",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "peekOfCode": "lvr6 = Livros(\"1984\", \"George Orwell\", date(1949, 6, 8))\nlvr7 = Livros(\"Dom Casmurro\", \"Machado de Assis\", date(1899, 1, 1))\nlvr8 = Livros(\"Harry Potter\", \"J.K. Rowling\", date(1997, 6, 26))\nlvr9 = Livros(\"Clean Code\", \"Robert Martin\", date(2008, 8, 1))\nlvr10 = Livros(\"Python Fluente\", \"Luciano Ramalho\", date(2015, 7, 20))\nbiblioteca.cadastrar_livro(lvr5)\nbiblioteca.cadastrar_livro(lvr6)\nbiblioteca.cadastrar_livro(lvr7)\nbiblioteca.cadastrar_livro(lvr8)\nbiblioteca.cadastrar_livro(lvr9)",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "documentation": {}
+    },
+    {
+        "label": "lvr7",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "peekOfCode": "lvr7 = Livros(\"Dom Casmurro\", \"Machado de Assis\", date(1899, 1, 1))\nlvr8 = Livros(\"Harry Potter\", \"J.K. Rowling\", date(1997, 6, 26))\nlvr9 = Livros(\"Clean Code\", \"Robert Martin\", date(2008, 8, 1))\nlvr10 = Livros(\"Python Fluente\", \"Luciano Ramalho\", date(2015, 7, 20))\nbiblioteca.cadastrar_livro(lvr5)\nbiblioteca.cadastrar_livro(lvr6)\nbiblioteca.cadastrar_livro(lvr7)\nbiblioteca.cadastrar_livro(lvr8)\nbiblioteca.cadastrar_livro(lvr9)\nbiblioteca.cadastrar_livro(lvr10)",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "documentation": {}
+    },
+    {
+        "label": "lvr8",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "peekOfCode": "lvr8 = Livros(\"Harry Potter\", \"J.K. Rowling\", date(1997, 6, 26))\nlvr9 = Livros(\"Clean Code\", \"Robert Martin\", date(2008, 8, 1))\nlvr10 = Livros(\"Python Fluente\", \"Luciano Ramalho\", date(2015, 7, 20))\nbiblioteca.cadastrar_livro(lvr5)\nbiblioteca.cadastrar_livro(lvr6)\nbiblioteca.cadastrar_livro(lvr7)\nbiblioteca.cadastrar_livro(lvr8)\nbiblioteca.cadastrar_livro(lvr9)\nbiblioteca.cadastrar_livro(lvr10)\nbiblioteca.cadastrar_usuarios(us4)",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "documentation": {}
+    },
+    {
+        "label": "lvr9",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "peekOfCode": "lvr9 = Livros(\"Clean Code\", \"Robert Martin\", date(2008, 8, 1))\nlvr10 = Livros(\"Python Fluente\", \"Luciano Ramalho\", date(2015, 7, 20))\nbiblioteca.cadastrar_livro(lvr5)\nbiblioteca.cadastrar_livro(lvr6)\nbiblioteca.cadastrar_livro(lvr7)\nbiblioteca.cadastrar_livro(lvr8)\nbiblioteca.cadastrar_livro(lvr9)\nbiblioteca.cadastrar_livro(lvr10)\nbiblioteca.cadastrar_usuarios(us4)\nbiblioteca.cadastrar_usuarios(us5)",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "documentation": {}
+    },
+    {
+        "label": "lvr10",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "peekOfCode": "lvr10 = Livros(\"Python Fluente\", \"Luciano Ramalho\", date(2015, 7, 20))\nbiblioteca.cadastrar_livro(lvr5)\nbiblioteca.cadastrar_livro(lvr6)\nbiblioteca.cadastrar_livro(lvr7)\nbiblioteca.cadastrar_livro(lvr8)\nbiblioteca.cadastrar_livro(lvr9)\nbiblioteca.cadastrar_livro(lvr10)\nbiblioteca.cadastrar_usuarios(us4)\nbiblioteca.cadastrar_usuarios(us5)\nbiblioteca.cadastrar_usuarios(us6)",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "documentation": {}
+    },
+    {
+        "label": "lvr_atraso",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "peekOfCode": "lvr_atraso = Livros(\"Livro Teste Atraso\", \"Autor Teste\", date(2020, 1, 1))\nbiblioteca.cadastrar_livro(lvr_atraso)\nbiblioteca.emprestar_livro(us5, lvr_atraso) \nfor registro in biblioteca.livros_emprestados:\n    if registro[\"livro_emprestado\"] == lvr_atraso:\n        # Modificar data de devolução para 5 dias ATRÁS\n        registro[\"data_devolução\"] = datetime.today() - timedelta(days=5)\n        print(\"⚠️  Data de devolução modificada para 5 dias atrás\")\n        break\nbiblioteca.devolver_livro(us5, lvr_atraso)  ",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "documentation": {}
+    },
+    {
+        "label": "lvr_atraso2",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "peekOfCode": "lvr_atraso2 = Livros(\"Outro Livro Atrasado\", \"Autor\", date(2021, 1, 1))\nbiblioteca.cadastrar_livro(lvr_atraso2)\nbiblioteca.emprestar_livro(us1, lvr_atraso2)\nfor registro in biblioteca.livros_emprestados:\n    if registro[\"livro_emprestado\"] == lvr_atraso2:\n        registro[\"data_devolução\"] = datetime.today() - timedelta(days=3)\n        break\nprint(\"\\n📊 RELATÓRIO COM ATRASOS:\")\nbiblioteca.relatorio()\nprint(\"\\n\" + \"=\"*60)",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "documentation": {}
+    },
+    {
+        "label": "biblioteca_vazia",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "peekOfCode": "biblioteca_vazia = Biblioteca(\"Biblioteca Vazia\")\nbiblioteca_vazia.relatorio()  \nbiblioteca_vazia.cadastrar_usuarios(Usuario(\"Teste\", \"teste@teste.com\"))\nusuario_sem_livros = Usuario(\"Sem Livros\", \"sem@teste.com\")\nbiblioteca.cadastrar_usuarios(usuario_sem_livros)\nbiblioteca.devolver_livro(usuario_sem_livros, lvr1) \nlivro_nunca_emprestado = Livros(\"Nunca Emprestado\", \"Autor\", date(2024, 1, 1))\nbiblioteca.cadastrar_livro(livro_nunca_emprestado)\nbiblioteca.devolver_livro(us1, livro_nunca_emprestado)",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "documentation": {}
+    },
+    {
+        "label": "usuario_sem_livros",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "peekOfCode": "usuario_sem_livros = Usuario(\"Sem Livros\", \"sem@teste.com\")\nbiblioteca.cadastrar_usuarios(usuario_sem_livros)\nbiblioteca.devolver_livro(usuario_sem_livros, lvr1) \nlivro_nunca_emprestado = Livros(\"Nunca Emprestado\", \"Autor\", date(2024, 1, 1))\nbiblioteca.cadastrar_livro(livro_nunca_emprestado)\nbiblioteca.devolver_livro(us1, livro_nunca_emprestado)",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "documentation": {}
+    },
+    {
+        "label": "livro_nunca_emprestado",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "peekOfCode": "livro_nunca_emprestado = Livros(\"Nunca Emprestado\", \"Autor\", date(2024, 1, 1))\nbiblioteca.cadastrar_livro(livro_nunca_emprestado)\nbiblioteca.devolver_livro(us1, livro_nunca_emprestado)",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_de_biblioteca",
+        "documentation": {}
+    },
+    {
+        "label": "SistemaSenhas",
+        "kind": 6,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_de_senha_com_prioridade",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_de_senha_com_prioridade",
+        "peekOfCode": "class SistemaSenhas:\n    def __init__(self):\n        self.lista_grave = deque()\n        self.lista_idosos = deque()\n        self.lista_geral = deque()\n        self.contadores = {'G' : 1, 'I': 1, 'N': 1}\n        self.historico = []\n    def nova_senha(self, tipo):\n        if tipo not in ['grave', 'geral', 'idoso']:\n            print('Tipo de senha inválido!')",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_de_senha_com_prioridade",
+        "documentation": {}
+    },
+    {
+        "label": "hospital",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_de_senha_com_prioridade",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_de_senha_com_prioridade",
+        "peekOfCode": "hospital = SistemaSenhas()\nhospital.nova_senha('idoso')\nhospital.nova_senha('grave')\nhospital.nova_senha('geral')\nhospital.nova_senha('geral')\nhospital.status()\nhospital.proximo_atendimento()\nhospital.proximo_atendimento()\nhospital.proximo_atendimento()\nhospital.historico_atendimentos()",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_de_senha_com_prioridade",
+        "documentation": {}
+    },
+    {
+        "label": "valida_cpf",
+        "kind": 2,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.validador_cpf",
+        "description": "fase_nacional_preparacao.exercicios_logica.validador_cpf",
+        "peekOfCode": "def valida_cpf(cpf: str) -> bool:\n    cpf_limpo = ''.join(filter(str.isdigit, cpf))\n    print('CPF limpo:', cpf_limpo) \n    if len(cpf_limpo) != 11:\n        print('Erro: CPF não tem 11 dígitos')\n        return False\n    if cpf_limpo == cpf_limpo[0] * 11:\n        print('Erro: CPF com sequência repetida')\n        return False\n    soma = 0",
+        "detail": "fase_nacional_preparacao.exercicios_logica.validador_cpf",
+        "documentation": {}
+    },
+    {
+        "label": "cpf",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.validador_cpf",
+        "description": "fase_nacional_preparacao.exercicios_logica.validador_cpf",
+        "peekOfCode": "cpf = input('digite o seu cpf: ')\nvalida_cpf(cpf)",
+        "detail": "fase_nacional_preparacao.exercicios_logica.validador_cpf",
+        "documentation": {}
+    }
+]
