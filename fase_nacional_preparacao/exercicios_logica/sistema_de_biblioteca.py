@@ -21,7 +21,7 @@ class Biblioteca:
 
         
     def cadastrar_usuarios(self, usuario):
-        if usuario.user_id in self.usuarios_biblioteca:
+        if usuario in self.usuarios_biblioteca:
             print("Este usuário já esta cadastrado em nossa biblioteca.")
             return
 
