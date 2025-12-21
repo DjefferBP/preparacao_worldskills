@@ -48,6 +48,22 @@
         "documentation": {}
     },
     {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "deque",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
         "label": "deque",
         "importPath": "collections",
         "description": "collections",
@@ -96,6 +112,32 @@
         "importPath": "random",
         "description": "random",
         "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "math",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "math",
+        "description": "math",
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
         "documentation": {}
     },
     {
@@ -393,6 +435,258 @@
         "description": "fase_nacional_preparacao.exercicios_logica.sistema_de_senha_com_prioridade",
         "peekOfCode": "hospital = SistemaSenhas()\nhospital.nova_senha('idoso')\nhospital.nova_senha('grave')\nhospital.nova_senha('geral')\nhospital.nova_senha('geral')\nhospital.status()\nhospital.proximo_atendimento()\nhospital.proximo_atendimento()\nhospital.proximo_atendimento()\nhospital.historico_atendimentos()",
         "detail": "fase_nacional_preparacao.exercicios_logica.sistema_de_senha_com_prioridade",
+        "documentation": {}
+    },
+    {
+        "label": "Constantes",
+        "kind": 6,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "peekOfCode": "class Constantes(Enum):\n    BANDEIRADA = 5.00\n    KM = 2.50\n    POR_MINUTO = 0.50\nclass StatusMotorista(Enum):\n    DISPONIVEL = True\n    INDISPONIVEL = False\nclass Passageiro:\n    def __init__(self, nome: str, saldo: float):\n        self.nome = nome",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "documentation": {}
+    },
+    {
+        "label": "StatusMotorista",
+        "kind": 6,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "peekOfCode": "class StatusMotorista(Enum):\n    DISPONIVEL = True\n    INDISPONIVEL = False\nclass Passageiro:\n    def __init__(self, nome: str, saldo: float):\n        self.nome = nome\n        self.posicao = (0, 0)\n        self.saldo = saldo\n    def adicionar_saldo(self, valor: float):\n        print(f\"R${valor:.2f} adicionado à {self.nome}\")",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "documentation": {}
+    },
+    {
+        "label": "Passageiro",
+        "kind": 6,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "peekOfCode": "class Passageiro:\n    def __init__(self, nome: str, saldo: float):\n        self.nome = nome\n        self.posicao = (0, 0)\n        self.saldo = saldo\n    def adicionar_saldo(self, valor: float):\n        print(f\"R${valor:.2f} adicionado à {self.nome}\")\n        return self.saldo + valor\n    def decrementar_saldo(self, valor: float):\n        print(f\"Você gastou R${valor:.2f} nessa corrida.\")",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "documentation": {}
+    },
+    {
+        "label": "Motorista",
+        "kind": 6,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "peekOfCode": "class Motorista:\n    def __init__(self, nome: str, posicao_motorista: tuple):\n        self.nome = nome\n        self.posicao = posicao_motorista\n        self.disponivel = StatusMotorista.DISPONIVEL.value\n        self.corridas_realizadas = 0\nclass Uber():\n    def __init__(self):\n        self.corridas_em_andamento = deque()\n        self.todos_passageiros = []",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "documentation": {}
+    },
+    {
+        "label": "Uber",
+        "kind": 6,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "peekOfCode": "class Uber():\n    def __init__(self):\n        self.corridas_em_andamento = deque()\n        self.todos_passageiros = []\n        self.todos_motoristas = []\n    def adicionar_motorista(self, motorista: object):\n        if not isinstance(motorista, Motorista):\n            print(\"Este usuário não pertence a classe de motorista!\")\n            return\n        if motorista in self.todos_motoristas:",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "documentation": {}
+    },
+    {
+        "label": "Corrida",
+        "kind": 6,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "peekOfCode": "class Corrida():\n    def __init__(self, passageiro, motorista, destino, distancia, distancia_ate_passageiro, tempo, valor):\n        self.id = str(uuid.uuid4())[:8]\n        self.passageiro = passageiro\n        self.motorista = motorista\n        self.origem = passageiro.posicao\n        self.destino = destino\n        self.distancia = distancia\n        self.distancia_ate_passsageiro = distancia_ate_passageiro\n        self.tempo = tempo",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "documentation": {}
+    },
+    {
+        "label": "calcular_distancia",
+        "kind": 2,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "peekOfCode": "def calcular_distancia(ponto1, ponto2):\n    return math.sqrt((ponto2[0] - ponto1[0])**2 + (ponto2[1] - ponto1[1])**2)\nclass Constantes(Enum):\n    BANDEIRADA = 5.00\n    KM = 2.50\n    POR_MINUTO = 0.50\nclass StatusMotorista(Enum):\n    DISPONIVEL = True\n    INDISPONIVEL = False\nclass Passageiro:",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "documentation": {}
+    },
+    {
+        "label": "concluir_corrida_test",
+        "kind": 2,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "peekOfCode": "def concluir_corrida_test(sistema, corrida_index=0):\n    if not sistema.corridas_em_andamento:\n        print(\"Nenhuma corrida para concluir\")\n        return\n    if corrida_index >= len(sistema.corridas_em_andamento):\n        print(\"Índice inválido\")\n        return\n    corrida = sistema.corridas_em_andamento[corrida_index]\n    print(f\"\\nCONCLUINDO CORRIDA:\")\n    print(f\"   ID: {corrida.id}\")",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "documentation": {}
+    },
+    {
+        "label": "pas1",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "peekOfCode": "pas1 = Passageiro(\"Misael\", 60)\npas2 = Passageiro(\"Gabriel Henrique Machado\", 30)\nmotorista1 = Motorista(\"Daniel Fugibosta\", (1, 3))\nmotorista2 = Motorista(\"Saulo Correa\", (1, 2))\nuber = Uber()\nuber.adicionar_motorista(motorista1)\nuber.adicionar_motorista(motorista2)\nuber.adicionar_passageiro(pas1)\nuber.adicionar_passageiro(pas2)\nprint(\"\\n\" + \"=\"*60)",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "documentation": {}
+    },
+    {
+        "label": "pas2",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "peekOfCode": "pas2 = Passageiro(\"Gabriel Henrique Machado\", 30)\nmotorista1 = Motorista(\"Daniel Fugibosta\", (1, 3))\nmotorista2 = Motorista(\"Saulo Correa\", (1, 2))\nuber = Uber()\nuber.adicionar_motorista(motorista1)\nuber.adicionar_motorista(motorista2)\nuber.adicionar_passageiro(pas1)\nuber.adicionar_passageiro(pas2)\nprint(\"\\n\" + \"=\"*60)\nmotoristas_extras = [",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "documentation": {}
+    },
+    {
+        "label": "motorista1",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "peekOfCode": "motorista1 = Motorista(\"Daniel Fugibosta\", (1, 3))\nmotorista2 = Motorista(\"Saulo Correa\", (1, 2))\nuber = Uber()\nuber.adicionar_motorista(motorista1)\nuber.adicionar_motorista(motorista2)\nuber.adicionar_passageiro(pas1)\nuber.adicionar_passageiro(pas2)\nprint(\"\\n\" + \"=\"*60)\nmotoristas_extras = [\n    Motorista(\"Carlos Silva\", (2, 3)),",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "documentation": {}
+    },
+    {
+        "label": "motorista2",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "peekOfCode": "motorista2 = Motorista(\"Saulo Correa\", (1, 2))\nuber = Uber()\nuber.adicionar_motorista(motorista1)\nuber.adicionar_motorista(motorista2)\nuber.adicionar_passageiro(pas1)\nuber.adicionar_passageiro(pas2)\nprint(\"\\n\" + \"=\"*60)\nmotoristas_extras = [\n    Motorista(\"Carlos Silva\", (2, 3)),\n    Motorista(\"Ana Santos\", (5, 1)),",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "documentation": {}
+    },
+    {
+        "label": "uber",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "peekOfCode": "uber = Uber()\nuber.adicionar_motorista(motorista1)\nuber.adicionar_motorista(motorista2)\nuber.adicionar_passageiro(pas1)\nuber.adicionar_passageiro(pas2)\nprint(\"\\n\" + \"=\"*60)\nmotoristas_extras = [\n    Motorista(\"Carlos Silva\", (2, 3)),\n    Motorista(\"Ana Santos\", (5, 1)),\n    Motorista(\"Paulo Costa\", (7, 2)),",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "documentation": {}
+    },
+    {
+        "label": "motoristas_extras",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "peekOfCode": "motoristas_extras = [\n    Motorista(\"Carlos Silva\", (2, 3)),\n    Motorista(\"Ana Santos\", (5, 1)),\n    Motorista(\"Paulo Costa\", (7, 2)),\n    Motorista(\"Fernanda Lima\", (4, 6)),\n    Motorista(\"Roberto Alves\", (1, 4))\n]\npassageiros_extras = [\n    Passageiro(\"Mariana\", 100.0),\n    Passageiro(\"Ricardo\", 50.0),",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "documentation": {}
+    },
+    {
+        "label": "passageiros_extras",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "peekOfCode": "passageiros_extras = [\n    Passageiro(\"Mariana\", 100.0),\n    Passageiro(\"Ricardo\", 50.0),\n    Passageiro(\"Juliana\", 200.0),\n    Passageiro(\"Felipe\", 30.0),\n    Passageiro(\"Camila\", 150.0)\n]\nfor motorista in motoristas_extras:\n    uber.adicionar_motorista(motorista)\nfor passageiro in passageiros_extras:",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "documentation": {}
+    },
+    {
+        "label": "destinos",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "peekOfCode": "destinos = [\n    (10, 10),\n    (3, 5),\n    (8, 2),\n    (6, 7),\n    (2, 9)\n]\nprint(f\"\\n1. Mariana → (10, 10):\")\nuber.solicitar_corrida(passageiros_extras[0], destinos[0])\nprint(f\"\\n2. Ricardo → (3, 5):\")",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "documentation": {}
+    },
+    {
+        "label": "pas_test",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "peekOfCode": "pas_test = Passageiro(\"Teste\", 100.0)\nuber.adicionar_passageiro(pas_test)\nuber.solicitar_corrida(pas_test, (2, 2))\nprint(\"\\n\" + \"=\"*60)\nprint(f\"\\nTotal de corridas ativas: {len(uber.corridas_em_andamento)}\")\nif uber.corridas_em_andamento:\n    uber.ver_corridas_em_andamento()\n    print(f\"\\nESTATÍSTICAS DAS CORRIDAS:\")\n    total_valor = sum(c.valor for c in uber.corridas_em_andamento)\n    total_distancia = sum(c.distancia for c in uber.corridas_em_andamento)",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "documentation": {}
+    },
+    {
+        "label": "pas_fantasma",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "peekOfCode": "pas_fantasma = Passageiro(\"Fantasma\", 100.0)\nuber.solicitar_corrida(pas_fantasma, (1, 1))\nprint(\"\\n2. Destino igual à origem:\")\npas_test2 = Passageiro(\"Teste2\", 100.0)\nuber.adicionar_passageiro(pas_test2)\npas_test2.posicao = (5, 5)\nuber.solicitar_corrida(pas_test2, (5, 5))\nprint(\"\\n3. Coordenadas negativas:\")\nuber.solicitar_corrida(pas_test2, (-5, -10))\nprint(\"\\n4. Motorista com disponibilidade None:\")",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "documentation": {}
+    },
+    {
+        "label": "pas_test2",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "peekOfCode": "pas_test2 = Passageiro(\"Teste2\", 100.0)\nuber.adicionar_passageiro(pas_test2)\npas_test2.posicao = (5, 5)\nuber.solicitar_corrida(pas_test2, (5, 5))\nprint(\"\\n3. Coordenadas negativas:\")\nuber.solicitar_corrida(pas_test2, (-5, -10))\nprint(\"\\n4. Motorista com disponibilidade None:\")\nmotorista_estranho = Motorista(\"Estranho\", (3, 3))\nmotorista_estranho.disponivel = None\nuber.adicionar_motorista(motorista_estranho)",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "documentation": {}
+    },
+    {
+        "label": "pas_test2.posicao",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "peekOfCode": "pas_test2.posicao = (5, 5)\nuber.solicitar_corrida(pas_test2, (5, 5))\nprint(\"\\n3. Coordenadas negativas:\")\nuber.solicitar_corrida(pas_test2, (-5, -10))\nprint(\"\\n4. Motorista com disponibilidade None:\")\nmotorista_estranho = Motorista(\"Estranho\", (3, 3))\nmotorista_estranho.disponivel = None\nuber.adicionar_motorista(motorista_estranho)\nprint(\"\\n5. Passageiro com saldo negativo:\")\npas_sem_grana = Passageiro(\"Sem Grana\", -10.0)",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "documentation": {}
+    },
+    {
+        "label": "motorista_estranho",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "peekOfCode": "motorista_estranho = Motorista(\"Estranho\", (3, 3))\nmotorista_estranho.disponivel = None\nuber.adicionar_motorista(motorista_estranho)\nprint(\"\\n5. Passageiro com saldo negativo:\")\npas_sem_grana = Passageiro(\"Sem Grana\", -10.0)\nuber.adicionar_passageiro(pas_sem_grana)\nuber.solicitar_corrida(pas_sem_grana, (2, 2))\nprint(\"\\n\" + \"=\"*60)\nimport time\nprint(\"\\nTestando 10 solicitações rápidas...\")",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "documentation": {}
+    },
+    {
+        "label": "motorista_estranho.disponivel",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "peekOfCode": "motorista_estranho.disponivel = None\nuber.adicionar_motorista(motorista_estranho)\nprint(\"\\n5. Passageiro com saldo negativo:\")\npas_sem_grana = Passageiro(\"Sem Grana\", -10.0)\nuber.adicionar_passageiro(pas_sem_grana)\nuber.solicitar_corrida(pas_sem_grana, (2, 2))\nprint(\"\\n\" + \"=\"*60)\nimport time\nprint(\"\\nTestando 10 solicitações rápidas...\")\nfor motorista in uber.todos_motoristas:",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "documentation": {}
+    },
+    {
+        "label": "pas_sem_grana",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "peekOfCode": "pas_sem_grana = Passageiro(\"Sem Grana\", -10.0)\nuber.adicionar_passageiro(pas_sem_grana)\nuber.solicitar_corrida(pas_sem_grana, (2, 2))\nprint(\"\\n\" + \"=\"*60)\nimport time\nprint(\"\\nTestando 10 solicitações rápidas...\")\nfor motorista in uber.todos_motoristas:\n    motorista.disponivel = True\nsolicitacoes_realizadas = 0\ninicio = time.time()",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "documentation": {}
+    },
+    {
+        "label": "solicitacoes_realizadas",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "peekOfCode": "solicitacoes_realizadas = 0\ninicio = time.time()\nfor i in range(10):\n    pas_temp = Passageiro(f\"Temp{i}\", 100.0)\n    pas_temp.posicao = (random.randint(0, 10), random.randint(0, 10))\n    uber.adicionar_passageiro(pas_temp)\n    destino = (random.randint(0, 15), random.randint(0, 15))\n    print(f\"\\n{i+1}. {pas_temp.nome} → {destino}\")\n    resultado = uber.solicitar_corrida(pas_temp, destino)\n    if resultado and \"SUCESSO\" in str(resultado):",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "documentation": {}
+    },
+    {
+        "label": "inicio",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "peekOfCode": "inicio = time.time()\nfor i in range(10):\n    pas_temp = Passageiro(f\"Temp{i}\", 100.0)\n    pas_temp.posicao = (random.randint(0, 10), random.randint(0, 10))\n    uber.adicionar_passageiro(pas_temp)\n    destino = (random.randint(0, 15), random.randint(0, 15))\n    print(f\"\\n{i+1}. {pas_temp.nome} → {destino}\")\n    resultado = uber.solicitar_corrida(pas_temp, destino)\n    if resultado and \"SUCESSO\" in str(resultado):\n        solicitacoes_realizadas += 1",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "documentation": {}
+    },
+    {
+        "label": "fim",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "peekOfCode": "fim = time.time()\ntempo_total = fim - inicio\nprint(f\"\\nRESULTADO DO TESTE DE PERFORMANCE:\")\nprint(f\"   Tempo total: {tempo_total:.2f} segundos\")\nprint(f\"   Solicitações: 10 tentadas\")\nprint(f\"   Sucessos: {solicitacoes_realizadas}\")\nprint(f\"   Tempo médio por solicitação: {tempo_total/10:.3f}s\")\nprint(f\"   Corridas ativas: {len(uber.corridas_em_andamento)}\")\nprint(\"\\n\" + \"=\"*60)\nprint(f\"\\nESTADO FINAL APÓS TODOS OS TESTES:\")",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "documentation": {}
+    },
+    {
+        "label": "tempo_total",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "peekOfCode": "tempo_total = fim - inicio\nprint(f\"\\nRESULTADO DO TESTE DE PERFORMANCE:\")\nprint(f\"   Tempo total: {tempo_total:.2f} segundos\")\nprint(f\"   Solicitações: 10 tentadas\")\nprint(f\"   Sucessos: {solicitacoes_realizadas}\")\nprint(f\"   Tempo médio por solicitação: {tempo_total/10:.3f}s\")\nprint(f\"   Corridas ativas: {len(uber.corridas_em_andamento)}\")\nprint(\"\\n\" + \"=\"*60)\nprint(f\"\\nESTADO FINAL APÓS TODOS OS TESTES:\")\nprint(f\"\\nESTATÍSTICAS GERAIS:\")",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "documentation": {}
+    },
+    {
+        "label": "motoristas_disponiveis",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "peekOfCode": "motoristas_disponiveis = sum(1 for m in uber.todos_motoristas if m.disponivel)\nprint(f\"   Motoristas disponíveis: {motoristas_disponiveis}\")\nprint(f\"   Motoristas ocupados: {len(uber.todos_motoristas) - motoristas_disponiveis}\")\nif uber.todos_passageiros:\n    saldo_medio = sum(p.saldo for p in uber.todos_passageiros) / len(uber.todos_passageiros)\n    print(f\"   Saldo médio passageiros: R${saldo_medio:.2f}\")\nprint(f\"\\nÚLTIMA VERIFICAÇÃO DAS CORRIDAS:\")\nuber.ver_corridas_em_andamento()\nprint(\"\\n\" + \"=\"*60)\nprint(\"TODOS OS TESTES CONCLUÍDOS!\")",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
         "documentation": {}
     },
     {
