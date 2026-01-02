@@ -1,5 +1,54 @@
 [
     {
+        "label": "ABC",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "abstractmethod",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "ABC",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "abstractmethod",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "datetime",
+        "description": "datetime",
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
         "label": "date",
         "importPath": "datetime",
         "description": "datetime",
@@ -53,6 +102,24 @@
         "description": "datetime",
         "isExtraImport": true,
         "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
         "documentation": {}
     },
     {
@@ -106,15 +173,6 @@
         "documentation": {}
     },
     {
-        "label": "random",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "random",
-        "description": "random",
-        "detail": "random",
-        "documentation": {}
-    },
-    {
         "label": "math",
         "kind": 6,
         "isExtraImport": true,
@@ -132,12 +190,199 @@
         "documentation": {}
     },
     {
-        "label": "time",
+        "label": "unittest",
         "kind": 6,
         "isExtraImport": true,
-        "importPath": "time",
-        "description": "time",
-        "detail": "time",
+        "importPath": "unittest",
+        "description": "unittest",
+        "detail": "unittest",
+        "documentation": {}
+    },
+    {
+        "label": "ContaCorrente",
+        "importPath": "bancos_com_heranca",
+        "description": "bancos_com_heranca",
+        "isExtraImport": true,
+        "detail": "bancos_com_heranca",
+        "documentation": {}
+    },
+    {
+        "label": "ContaPoupanca",
+        "importPath": "bancos_com_heranca",
+        "description": "bancos_com_heranca",
+        "isExtraImport": true,
+        "detail": "bancos_com_heranca",
+        "documentation": {}
+    },
+    {
+        "label": "Nota",
+        "kind": 6,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.aluno",
+        "description": "fase_nacional_preparacao.exercicios_logica.aluno",
+        "peekOfCode": "class Nota:\n    def __init__(self, nota: float):\n        self._nota = 0\n        self.nota = nota\n    @property\n    def nota(self):\n        return self._nota\n    @nota.setter\n    def nota(self, valor: float):\n        if valor >= 0:",
+        "detail": "fase_nacional_preparacao.exercicios_logica.aluno",
+        "documentation": {}
+    },
+    {
+        "label": "nota",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.aluno",
+        "description": "fase_nacional_preparacao.exercicios_logica.aluno",
+        "peekOfCode": "nota = Nota(55)\nnota.nota = 3\nnota.nota = -3",
+        "detail": "fase_nacional_preparacao.exercicios_logica.aluno",
+        "documentation": {}
+    },
+    {
+        "label": "nota.nota",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.aluno",
+        "description": "fase_nacional_preparacao.exercicios_logica.aluno",
+        "peekOfCode": "nota.nota = 3\nnota.nota = -3",
+        "detail": "fase_nacional_preparacao.exercicios_logica.aluno",
+        "documentation": {}
+    },
+    {
+        "label": "nota.nota",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.aluno",
+        "description": "fase_nacional_preparacao.exercicios_logica.aluno",
+        "peekOfCode": "nota.nota = -3",
+        "detail": "fase_nacional_preparacao.exercicios_logica.aluno",
+        "documentation": {}
+    },
+    {
+        "label": "Transacao",
+        "kind": 6,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.bancos_com_heranca",
+        "description": "fase_nacional_preparacao.exercicios_logica.bancos_com_heranca",
+        "peekOfCode": "class Transacao:\n    def __init__(self, tipo: str, valor: float):\n        self.data = datetime.now()\n        self.tipo = tipo\n        self.valor = valor\nclass Historico:\n    def __init__(self):\n        self.transacoes: list[Transacao] = []\n    def adicionar(self, transacao: Transacao):\n        self.transacoes.append(transacao)",
+        "detail": "fase_nacional_preparacao.exercicios_logica.bancos_com_heranca",
+        "documentation": {}
+    },
+    {
+        "label": "Historico",
+        "kind": 6,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.bancos_com_heranca",
+        "description": "fase_nacional_preparacao.exercicios_logica.bancos_com_heranca",
+        "peekOfCode": "class Historico:\n    def __init__(self):\n        self.transacoes: list[Transacao] = []\n    def adicionar(self, transacao: Transacao):\n        self.transacoes.append(transacao)\n    def gerar_extrato(self) -> str:\n        linhas = []\n        for t in self.transacoes:\n            data = t.data.strftime(\"%d/%m/%Y %H:%M:%S\")\n            linhas.append(f\"[{data}] | {t.tipo} | R${t.valor:.2f}\")",
+        "detail": "fase_nacional_preparacao.exercicios_logica.bancos_com_heranca",
+        "documentation": {}
+    },
+    {
+        "label": "Conta",
+        "kind": 6,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.bancos_com_heranca",
+        "description": "fase_nacional_preparacao.exercicios_logica.bancos_com_heranca",
+        "peekOfCode": "class Conta(ABC):\n    def __init__(self, saldo: float):\n        if saldo < 0:\n            raise ValueError(\"Saldo inicial não deve ser negativo!\")\n        self._saldo = saldo\n        self._historico = Historico()\n        self._extrato_cache = None\n    @property\n    def saldo(self):\n        return self._saldo",
+        "detail": "fase_nacional_preparacao.exercicios_logica.bancos_com_heranca",
+        "documentation": {}
+    },
+    {
+        "label": "ContaCorrente",
+        "kind": 6,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.bancos_com_heranca",
+        "description": "fase_nacional_preparacao.exercicios_logica.bancos_com_heranca",
+        "peekOfCode": "class ContaCorrente(Conta):\n    def __init__(self, saldo, limite: float):\n        super().__init__(saldo)\n        self._limite = limite\n    @property\n    def limite(self):\n        return self._limite\n    def sacar(self, valor: float):\n        if valor <= 0:\n            raise ValueError(\"Não é possível sacar um valor negativo!\")",
+        "detail": "fase_nacional_preparacao.exercicios_logica.bancos_com_heranca",
+        "documentation": {}
+    },
+    {
+        "label": "ContaPoupanca",
+        "kind": 6,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.bancos_com_heranca",
+        "description": "fase_nacional_preparacao.exercicios_logica.bancos_com_heranca",
+        "peekOfCode": "class ContaPoupanca(Conta):\n    def __init__(self, saldo):\n        super().__init__(saldo)\n    def sacar(self, valor: float):\n        if valor <= 0:\n            raise ValueError(\"Não é possível sacar um valor negativo!\")\n        if valor > self._saldo:\n            raise ValueError(\"Você não tem saldo suficiente para sacar!\")\n        self._saldo -= valor\n        self.registrar_operacao(\"saque\", valor)",
+        "detail": "fase_nacional_preparacao.exercicios_logica.bancos_com_heranca",
+        "documentation": {}
+    },
+    {
+        "label": "executar_operacao",
+        "kind": 2,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.bancos_com_heranca",
+        "description": "fase_nacional_preparacao.exercicios_logica.bancos_com_heranca",
+        "peekOfCode": "def executar_operacao(conta: Conta, operacao: str, valor: float):\n    if operacao == \"depositar\":\n        conta.depositar(valor)\n        return\n    elif operacao == \"sacar\":\n        conta.sacar(valor)\n        return\n    else:\n        raise ValueError(\"Esta operação não está disponível!\")\ntry:",
+        "detail": "fase_nacional_preparacao.exercicios_logica.bancos_com_heranca",
+        "documentation": {}
+    },
+    {
+        "label": "Conta",
+        "kind": 6,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.banco_property_setter",
+        "description": "fase_nacional_preparacao.exercicios_logica.banco_property_setter",
+        "peekOfCode": "class Conta:\n    def __init__(self, saldo_inicial: float):\n        if not saldo_inicial:\n            raise ValueError(\"Saldo inicial inválido!\")\n        if saldo_inicial < 0:\n            raise ValueError(\"Saldo inicial deve ser maior que 0!\")\n        self._saldo = saldo_inicial\n        self._historico = []\n        self._extrato_cache = None\n    @property",
+        "detail": "fase_nacional_preparacao.exercicios_logica.banco_property_setter",
+        "documentation": {}
+    },
+    {
+        "label": "Acoes",
+        "kind": 6,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.jogo_simples",
+        "description": "fase_nacional_preparacao.exercicios_logica.jogo_simples",
+        "peekOfCode": "class Acoes:\n    def __init__(self, acao, descricao, horario_aconteceu=None, rodada=None):\n        self.data = datetime.datetime.now()\n        self.acao = acao\n        self.descricao = descricao\n        self.horario_aconteceu = horario_aconteceu\n        self.rodada = rodada\nclass Historico:\n    def __init__(self):\n        self.historicos_acoes: list[Acoes] = []",
+        "detail": "fase_nacional_preparacao.exercicios_logica.jogo_simples",
+        "documentation": {}
+    },
+    {
+        "label": "Historico",
+        "kind": 6,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.jogo_simples",
+        "description": "fase_nacional_preparacao.exercicios_logica.jogo_simples",
+        "peekOfCode": "class Historico:\n    def __init__(self):\n        self.historicos_acoes: list[Acoes] = []\n    def adicionar(self, acao: Acoes):\n        self.historicos_acoes.append(acao)\n    def gerar_historico(self):\n        linhas = []\n        for acao in self.historicos_acoes:\n            if acao.acao == \"batalha\":\n                linhas.append(f\"RODADA: {acao.rodada}\\n[{acao.horario_aconteceu}] {acao.acao.capitalize()} | {acao.descricao}\")",
+        "detail": "fase_nacional_preparacao.exercicios_logica.jogo_simples",
+        "documentation": {}
+    },
+    {
+        "label": "Personagem",
+        "kind": 6,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.jogo_simples",
+        "description": "fase_nacional_preparacao.exercicios_logica.jogo_simples",
+        "peekOfCode": "class Personagem(ABC):\n    def __init__(self, nome: str, vida: float, vida_max: float):\n        self._nome = nome\n        self._vida = vida\n        self._vida_max = vida_max\n        self.historico = Historico()\n        self._total_dano_causado = 0\n    @property\n    def vida(self):\n        return self._vida",
+        "detail": "fase_nacional_preparacao.exercicios_logica.jogo_simples",
+        "documentation": {}
+    },
+    {
+        "label": "Guerreiro",
+        "kind": 6,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.jogo_simples",
+        "description": "fase_nacional_preparacao.exercicios_logica.jogo_simples",
+        "peekOfCode": "class Guerreiro(Personagem):\n    def __init__(self, nome, vida, vida_max, forca: float):\n        super().__init__(nome, vida, vida_max)\n        if forca < 30 and forca > 45:\n            raise ValueError(\"A força do personagem deve ser no mínimo 30 e máximo 45.\")\n        self._forca = forca\n    @property\n    def forca(self):\n        return self._forca\n    @property",
+        "detail": "fase_nacional_preparacao.exercicios_logica.jogo_simples",
+        "documentation": {}
+    },
+    {
+        "label": "Mago",
+        "kind": 6,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.jogo_simples",
+        "description": "fase_nacional_preparacao.exercicios_logica.jogo_simples",
+        "peekOfCode": "class Mago(Personagem):\n    CUSTO_DE_MANA = 25\n    MULTIPLICADOR_DE_DANO = 3\n    RECUPERAR_MANA = 10\n    def __init__(self, nome, vida, vida_max, mana: int, poder_magico: float):\n        super().__init__(nome, vida, vida_max)\n        if mana < 50 and mana > 150:\n            raise ValueError(\"Mana mínima deve ser 50 e máxima de 150.\")\n        self._mana = mana\n        if poder_magico < 15 and poder_magico > 20:",
+        "detail": "fase_nacional_preparacao.exercicios_logica.jogo_simples",
+        "documentation": {}
+    },
+    {
+        "label": "Arqueiro",
+        "kind": 6,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.jogo_simples",
+        "description": "fase_nacional_preparacao.exercicios_logica.jogo_simples",
+        "peekOfCode": "class Arqueiro(Personagem):\n    CHANCE_DE_CRITICO = 0.3\n    DANO_CRITICO = 1.5\n    def __init__(self, nome, vida, vida_max, dano_variavel: float):\n        super().__init__(nome, vida, vida_max)\n        if dano_variavel < 20 or dano_variavel > 50:\n            raise ValueError(\"Dano mínimo deve ser 20 e no máximo 50!.\")\n        self._dano_variavel = dano_variavel\n    @property\n    def dano(self):",
+        "detail": "fase_nacional_preparacao.exercicios_logica.jogo_simples",
+        "documentation": {}
+    },
+    {
+        "label": "Equipes",
+        "kind": 6,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.jogo_simples",
+        "description": "fase_nacional_preparacao.exercicios_logica.jogo_simples",
+        "peekOfCode": "class Equipes:\n    def __init__(self, nome,  per1, per2, per3):\n        self._nome = nome\n        self.equipe = [per1, per2, per3]\n        self.seu_turno = False\n    @property\n    def vivos(self):\n        return [p for p in self.equipe if p.esta_vivo()]\n    @property\n    def nome(self):",
+        "detail": "fase_nacional_preparacao.exercicios_logica.jogo_simples",
+        "documentation": {}
+    },
+    {
+        "label": "Batalha",
+        "kind": 6,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.jogo_simples",
+        "description": "fase_nacional_preparacao.exercicios_logica.jogo_simples",
+        "peekOfCode": "class Batalha:\n    def __init__(self, time_a, time_b):\n        self.time_a = time_a\n        self.time_b = time_b\n        self.vencedor = None\n        self._rodada = 1\n        self._historico = Historico()\n        self.comecou = datetime.datetime.now()\n        self.quantidade_de_personagens_que_morreram = 0\n        self.jogo()",
+        "detail": "fase_nacional_preparacao.exercicios_logica.jogo_simples",
         "documentation": {}
     },
     {
@@ -687,6 +932,267 @@
         "description": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
         "peekOfCode": "motoristas_disponiveis = sum(1 for m in uber.todos_motoristas if m.disponivel)\nprint(f\"   Motoristas disponíveis: {motoristas_disponiveis}\")\nprint(f\"   Motoristas ocupados: {len(uber.todos_motoristas) - motoristas_disponiveis}\")\nif uber.todos_passageiros:\n    saldo_medio = sum(p.saldo for p in uber.todos_passageiros) / len(uber.todos_passageiros)\n    print(f\"   Saldo médio passageiros: R${saldo_medio:.2f}\")\nprint(f\"\\nÚLTIMA VERIFICAÇÃO DAS CORRIDAS:\")\nuber.ver_corridas_em_andamento()\nprint(\"\\n\" + \"=\"*60)\nprint(\"TODOS OS TESTES CONCLUÍDOS!\")",
         "detail": "fase_nacional_preparacao.exercicios_logica.sistema_de_uber",
+        "documentation": {}
+    },
+    {
+        "label": "Aluno",
+        "kind": 6,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_notas",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_notas",
+        "peekOfCode": "class Aluno:\n    def __init__(self, nome: str, idade: int, nota: float):\n        self.nome = nome\n        self.idade = idade\n        self.nota = nota\n    def __str__(self):\n        return f\"{self.nome} | Idade: {self.idade} | Nota: {self.nota}\"\nclass Turmas:\n    def __init__(self, serie: str, turma: str, periodo: str):\n        self.serie = serie",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_notas",
+        "documentation": {}
+    },
+    {
+        "label": "Turmas",
+        "kind": 6,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_notas",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_notas",
+        "peekOfCode": "class Turmas:\n    def __init__(self, serie: str, turma: str, periodo: str):\n        self.serie = serie\n        self.turma = turma\n        self.periodo = periodo\n        self.alunos = []\n    def __str__(self):\n        texto = f\"Série: {self.serie} | Turma: {self.turma} | Período: {self.periodo}| Alunos da turma {self.serie}°{self.turma}:\"\n        for aluno in self.alunos:\n            texto += f\"\\n{aluno}\"",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_notas",
+        "documentation": {}
+    },
+    {
+        "label": "SistemaNotas",
+        "kind": 6,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_notas",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_notas",
+        "peekOfCode": "class SistemaNotas:\n    def __init__(self):\n        self.turmas = []\n    def adicionar_turma(self, turma: object) -> bool:\n        if isinstance(turma, Turmas):\n            self.turmas.append(turma)\n            return True\n        return False\n    def verificar_melhor_aluno_entre_turmas(self) -> list:\n        if not self.turmas:",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_notas",
+        "documentation": {}
+    },
+    {
+        "label": "aluno1",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_notas",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_notas",
+        "peekOfCode": "aluno1 = Aluno(\"João\", 16, 8.5)\naluno2 = Aluno(\"Maria\", 15, 9.2)\naluno3 = Aluno(\"Pedro\", 16, 6.8)\naluno4 = Aluno(\"Ana\", 17, 9.8)\naluno5 = Aluno(\"Lucas\", 16, 7.4)\naluno6 = Aluno(\"Beatriz\", 15, 8.9)\n# ==== CRIANDO TURMAS ====\nturma1 = Turmas(\"1\", \"A\", \"Manhã\")\nturma2 = Turmas(\"2\", \"B\", \"Tarde\")\n# ==== ADICIONANDO ALUNOS NAS TURMAS ====",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_notas",
+        "documentation": {}
+    },
+    {
+        "label": "aluno2",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_notas",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_notas",
+        "peekOfCode": "aluno2 = Aluno(\"Maria\", 15, 9.2)\naluno3 = Aluno(\"Pedro\", 16, 6.8)\naluno4 = Aluno(\"Ana\", 17, 9.8)\naluno5 = Aluno(\"Lucas\", 16, 7.4)\naluno6 = Aluno(\"Beatriz\", 15, 8.9)\n# ==== CRIANDO TURMAS ====\nturma1 = Turmas(\"1\", \"A\", \"Manhã\")\nturma2 = Turmas(\"2\", \"B\", \"Tarde\")\n# ==== ADICIONANDO ALUNOS NAS TURMAS ====\nturma1.adicionar_aluno(aluno1)",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_notas",
+        "documentation": {}
+    },
+    {
+        "label": "aluno3",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_notas",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_notas",
+        "peekOfCode": "aluno3 = Aluno(\"Pedro\", 16, 6.8)\naluno4 = Aluno(\"Ana\", 17, 9.8)\naluno5 = Aluno(\"Lucas\", 16, 7.4)\naluno6 = Aluno(\"Beatriz\", 15, 8.9)\n# ==== CRIANDO TURMAS ====\nturma1 = Turmas(\"1\", \"A\", \"Manhã\")\nturma2 = Turmas(\"2\", \"B\", \"Tarde\")\n# ==== ADICIONANDO ALUNOS NAS TURMAS ====\nturma1.adicionar_aluno(aluno1)\nturma1.adicionar_aluno(aluno2)",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_notas",
+        "documentation": {}
+    },
+    {
+        "label": "aluno4",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_notas",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_notas",
+        "peekOfCode": "aluno4 = Aluno(\"Ana\", 17, 9.8)\naluno5 = Aluno(\"Lucas\", 16, 7.4)\naluno6 = Aluno(\"Beatriz\", 15, 8.9)\n# ==== CRIANDO TURMAS ====\nturma1 = Turmas(\"1\", \"A\", \"Manhã\")\nturma2 = Turmas(\"2\", \"B\", \"Tarde\")\n# ==== ADICIONANDO ALUNOS NAS TURMAS ====\nturma1.adicionar_aluno(aluno1)\nturma1.adicionar_aluno(aluno2)\nturma1.adicionar_aluno(aluno3)",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_notas",
+        "documentation": {}
+    },
+    {
+        "label": "aluno5",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_notas",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_notas",
+        "peekOfCode": "aluno5 = Aluno(\"Lucas\", 16, 7.4)\naluno6 = Aluno(\"Beatriz\", 15, 8.9)\n# ==== CRIANDO TURMAS ====\nturma1 = Turmas(\"1\", \"A\", \"Manhã\")\nturma2 = Turmas(\"2\", \"B\", \"Tarde\")\n# ==== ADICIONANDO ALUNOS NAS TURMAS ====\nturma1.adicionar_aluno(aluno1)\nturma1.adicionar_aluno(aluno2)\nturma1.adicionar_aluno(aluno3)\nturma2.adicionar_aluno(aluno4)",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_notas",
+        "documentation": {}
+    },
+    {
+        "label": "aluno6",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_notas",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_notas",
+        "peekOfCode": "aluno6 = Aluno(\"Beatriz\", 15, 8.9)\n# ==== CRIANDO TURMAS ====\nturma1 = Turmas(\"1\", \"A\", \"Manhã\")\nturma2 = Turmas(\"2\", \"B\", \"Tarde\")\n# ==== ADICIONANDO ALUNOS NAS TURMAS ====\nturma1.adicionar_aluno(aluno1)\nturma1.adicionar_aluno(aluno2)\nturma1.adicionar_aluno(aluno3)\nturma2.adicionar_aluno(aluno4)\nturma2.adicionar_aluno(aluno5)",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_notas",
+        "documentation": {}
+    },
+    {
+        "label": "turma1",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_notas",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_notas",
+        "peekOfCode": "turma1 = Turmas(\"1\", \"A\", \"Manhã\")\nturma2 = Turmas(\"2\", \"B\", \"Tarde\")\n# ==== ADICIONANDO ALUNOS NAS TURMAS ====\nturma1.adicionar_aluno(aluno1)\nturma1.adicionar_aluno(aluno2)\nturma1.adicionar_aluno(aluno3)\nturma2.adicionar_aluno(aluno4)\nturma2.adicionar_aluno(aluno5)\nturma2.adicionar_aluno(aluno6)\n# ==== CRIANDO SISTEMA ====",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_notas",
+        "documentation": {}
+    },
+    {
+        "label": "turma2",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_notas",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_notas",
+        "peekOfCode": "turma2 = Turmas(\"2\", \"B\", \"Tarde\")\n# ==== ADICIONANDO ALUNOS NAS TURMAS ====\nturma1.adicionar_aluno(aluno1)\nturma1.adicionar_aluno(aluno2)\nturma1.adicionar_aluno(aluno3)\nturma2.adicionar_aluno(aluno4)\nturma2.adicionar_aluno(aluno5)\nturma2.adicionar_aluno(aluno6)\n# ==== CRIANDO SISTEMA ====\nsistema = SistemaNotas()",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_notas",
+        "documentation": {}
+    },
+    {
+        "label": "sistema",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.sistema_notas",
+        "description": "fase_nacional_preparacao.exercicios_logica.sistema_notas",
+        "peekOfCode": "sistema = SistemaNotas()\n# ==== ADICIONANDO TURMAS NO SISTEMA ====\nsistema.adicionar_turma(turma1)\nsistema.adicionar_turma(turma2)\nprint(turma1)\nprint(turma2)\nturma1.calcular_media_geral_da_turma()\nturma2.calcular_media_geral_da_turma()\nprint()\nsistema.mostrar_melhores_alunos()",
+        "detail": "fase_nacional_preparacao.exercicios_logica.sistema_notas",
+        "documentation": {}
+    },
+    {
+        "label": "TestConta",
+        "kind": 6,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.test_conta",
+        "description": "fase_nacional_preparacao.exercicios_logica.test_conta",
+        "peekOfCode": "class TestConta(unittest.TestCase):\n    def test_saque_valido(self):\n        cc = ContaCorrente(100, limite=200)\n        cc.sacar(250)  \n        self.assertEqual(cc.saldo, -150)\n    def test_saque_excede_limite(self):\n        cc = ContaCorrente(100, limite=200)\n        with self.assertRaises(ValueError):\n            cc.sacar(400)\nclass TestContaPoupanca(unittest.TestCase):",
+        "detail": "fase_nacional_preparacao.exercicios_logica.test_conta",
+        "documentation": {}
+    },
+    {
+        "label": "TestContaPoupanca",
+        "kind": 6,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.test_conta",
+        "description": "fase_nacional_preparacao.exercicios_logica.test_conta",
+        "peekOfCode": "class TestContaPoupanca(unittest.TestCase):\n    def test_saque_invalido(self):\n        cp = ContaPoupanca(100)\n        with self.assertRaises(ValueError):\n            cp.sacar(150)\n    def test_deposito_invalido(self):\n        cp = ContaPoupanca(100)\n        with self.assertRaises(ValueError):\n            cp.depositar(-50)",
+        "detail": "fase_nacional_preparacao.exercicios_logica.test_conta",
+        "documentation": {}
+    },
+    {
+        "label": "Idade",
+        "kind": 6,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.treino_property_setter",
+        "description": "fase_nacional_preparacao.exercicios_logica.treino_property_setter",
+        "peekOfCode": "class Idade:\n    def __init__(self, idade: int):\n        self._idade = 0\n        self.idade = idade\n    @property\n    def idade(self):\n        return self._idade\n    @idade.setter\n    def idade(self, nova_idade: int):\n        if nova_idade >= 0 and nova_idade <= 130:",
+        "detail": "fase_nacional_preparacao.exercicios_logica.treino_property_setter",
+        "documentation": {}
+    },
+    {
+        "label": "Temperatura",
+        "kind": 6,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.treino_property_setter",
+        "description": "fase_nacional_preparacao.exercicios_logica.treino_property_setter",
+        "peekOfCode": "class Temperatura:\n    def __init__(self, celsius: int):\n        self._celsius = 0\n        self.celsius = celsius\n    @property\n    def celsius(self):\n        return self._celsius\n    @celsius.setter\n    def celsius(self, graus_celsius: int):\n        if graus_celsius >= -50 and graus_celsius <= 100:",
+        "detail": "fase_nacional_preparacao.exercicios_logica.treino_property_setter",
+        "documentation": {}
+    },
+    {
+        "label": "Nome",
+        "kind": 6,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.treino_property_setter",
+        "description": "fase_nacional_preparacao.exercicios_logica.treino_property_setter",
+        "peekOfCode": "class Nome:\n    def __init__(self, nome: str):\n        self._nome = \"\"\n        self.nome = nome\n    @property\n    def nome(self):\n        return self._nome\n    @nome.setter\n    def nome(self, nome: str):\n        self._nome = nome.strip().lower().capitalize()",
+        "detail": "fase_nacional_preparacao.exercicios_logica.treino_property_setter",
+        "documentation": {}
+    },
+    {
+        "label": "Retangulo",
+        "kind": 6,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.treino_property_setter",
+        "description": "fase_nacional_preparacao.exercicios_logica.treino_property_setter",
+        "peekOfCode": "class Retangulo:\n    def __init__(self, largura: float, altura: float):\n        self._altura = 0\n        self._largura = 0\n        self.largura = largura\n        self.altura = altura\n    @property\n    def largura(self):\n        return self._largura\n    @largura.setter",
+        "detail": "fase_nacional_preparacao.exercicios_logica.treino_property_setter",
+        "documentation": {}
+    },
+    {
+        "label": "ContaBancaria",
+        "kind": 6,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.treino_property_setter",
+        "description": "fase_nacional_preparacao.exercicios_logica.treino_property_setter",
+        "peekOfCode": "class ContaBancaria:\n    def __init__(self, saldo_inicial: float):\n        self._saldo = 0\n        self.saldo = saldo_inicial\n    @property\n    def saldo(self):\n        return self._saldo\n    @saldo.setter\n    def saldo(self, saldo_inicial: float):\n        if saldo_inicial >= 0:",
+        "detail": "fase_nacional_preparacao.exercicios_logica.treino_property_setter",
+        "documentation": {}
+    },
+    {
+        "label": "idade",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.treino_property_setter",
+        "description": "fase_nacional_preparacao.exercicios_logica.treino_property_setter",
+        "peekOfCode": "idade = Idade(5)\nidade.idade = 88\nidade.idade = -1\nclass Temperatura:\n    def __init__(self, celsius: int):\n        self._celsius = 0\n        self.celsius = celsius\n    @property\n    def celsius(self):\n        return self._celsius",
+        "detail": "fase_nacional_preparacao.exercicios_logica.treino_property_setter",
+        "documentation": {}
+    },
+    {
+        "label": "idade.idade",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.treino_property_setter",
+        "description": "fase_nacional_preparacao.exercicios_logica.treino_property_setter",
+        "peekOfCode": "idade.idade = 88\nidade.idade = -1\nclass Temperatura:\n    def __init__(self, celsius: int):\n        self._celsius = 0\n        self.celsius = celsius\n    @property\n    def celsius(self):\n        return self._celsius\n    @celsius.setter",
+        "detail": "fase_nacional_preparacao.exercicios_logica.treino_property_setter",
+        "documentation": {}
+    },
+    {
+        "label": "idade.idade",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.treino_property_setter",
+        "description": "fase_nacional_preparacao.exercicios_logica.treino_property_setter",
+        "peekOfCode": "idade.idade = -1\nclass Temperatura:\n    def __init__(self, celsius: int):\n        self._celsius = 0\n        self.celsius = celsius\n    @property\n    def celsius(self):\n        return self._celsius\n    @celsius.setter\n    def celsius(self, graus_celsius: int):",
+        "detail": "fase_nacional_preparacao.exercicios_logica.treino_property_setter",
+        "documentation": {}
+    },
+    {
+        "label": "temp",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.treino_property_setter",
+        "description": "fase_nacional_preparacao.exercicios_logica.treino_property_setter",
+        "peekOfCode": "temp = Temperatura(50)\ntemp.celsius = 11\ntemp.celsius = 111\nclass Nome:\n    def __init__(self, nome: str):\n        self._nome = \"\"\n        self.nome = nome\n    @property\n    def nome(self):\n        return self._nome",
+        "detail": "fase_nacional_preparacao.exercicios_logica.treino_property_setter",
+        "documentation": {}
+    },
+    {
+        "label": "temp.celsius",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.treino_property_setter",
+        "description": "fase_nacional_preparacao.exercicios_logica.treino_property_setter",
+        "peekOfCode": "temp.celsius = 11\ntemp.celsius = 111\nclass Nome:\n    def __init__(self, nome: str):\n        self._nome = \"\"\n        self.nome = nome\n    @property\n    def nome(self):\n        return self._nome\n    @nome.setter",
+        "detail": "fase_nacional_preparacao.exercicios_logica.treino_property_setter",
+        "documentation": {}
+    },
+    {
+        "label": "temp.celsius",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.treino_property_setter",
+        "description": "fase_nacional_preparacao.exercicios_logica.treino_property_setter",
+        "peekOfCode": "temp.celsius = 111\nclass Nome:\n    def __init__(self, nome: str):\n        self._nome = \"\"\n        self.nome = nome\n    @property\n    def nome(self):\n        return self._nome\n    @nome.setter\n    def nome(self, nome: str):",
+        "detail": "fase_nacional_preparacao.exercicios_logica.treino_property_setter",
+        "documentation": {}
+    },
+    {
+        "label": "nome",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.treino_property_setter",
+        "description": "fase_nacional_preparacao.exercicios_logica.treino_property_setter",
+        "peekOfCode": "nome = Nome(\"Djeffer\")\nnome.nome = \"roDRigo\"\nprint(nome.nome)\nnome.nome = \"MArciCÓ\"\nprint(nome.nome)\nclass Retangulo:\n    def __init__(self, largura: float, altura: float):\n        self._altura = 0\n        self._largura = 0\n        self.largura = largura",
+        "detail": "fase_nacional_preparacao.exercicios_logica.treino_property_setter",
+        "documentation": {}
+    },
+    {
+        "label": "nome.nome",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.treino_property_setter",
+        "description": "fase_nacional_preparacao.exercicios_logica.treino_property_setter",
+        "peekOfCode": "nome.nome = \"roDRigo\"\nprint(nome.nome)\nnome.nome = \"MArciCÓ\"\nprint(nome.nome)\nclass Retangulo:\n    def __init__(self, largura: float, altura: float):\n        self._altura = 0\n        self._largura = 0\n        self.largura = largura\n        self.altura = altura",
+        "detail": "fase_nacional_preparacao.exercicios_logica.treino_property_setter",
+        "documentation": {}
+    },
+    {
+        "label": "nome.nome",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.treino_property_setter",
+        "description": "fase_nacional_preparacao.exercicios_logica.treino_property_setter",
+        "peekOfCode": "nome.nome = \"MArciCÓ\"\nprint(nome.nome)\nclass Retangulo:\n    def __init__(self, largura: float, altura: float):\n        self._altura = 0\n        self._largura = 0\n        self.largura = largura\n        self.altura = altura\n    @property\n    def largura(self):",
+        "detail": "fase_nacional_preparacao.exercicios_logica.treino_property_setter",
+        "documentation": {}
+    },
+    {
+        "label": "retangulo",
+        "kind": 5,
+        "importPath": "fase_nacional_preparacao.exercicios_logica.treino_property_setter",
+        "description": "fase_nacional_preparacao.exercicios_logica.treino_property_setter",
+        "peekOfCode": "retangulo = Retangulo(56, 12)\nprint(retangulo.area)\nclass ContaBancaria:\n    def __init__(self, saldo_inicial: float):\n        self._saldo = 0\n        self.saldo = saldo_inicial\n    @property\n    def saldo(self):\n        return self._saldo\n    @saldo.setter",
+        "detail": "fase_nacional_preparacao.exercicios_logica.treino_property_setter",
         "documentation": {}
     },
     {
